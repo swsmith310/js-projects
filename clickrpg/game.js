@@ -16,15 +16,14 @@ for (stat in player.stats) {
     <script>
         function increase${stat}() {
             document.getElementById("${stat}-label").innerHTML = "${stat}: " + ++player.stats.${stat};
-            console.log(player.stats.${stat});
         }
         function decrease${stat}() {
             document.getElementById("${stat}-label").innerHTML = "${stat}: " + --player.stats.${stat};
         }
     </script>
-    <div>
+    <div id="stat-box">
         <button class="subStat" id="sub-${stat}" onclick="decrease${stat}()">-</button>
-            <span id=${stat}-label>${stat}: ${player.stats[stat]}</span>
+            <span id="${stat}-label">${stat}: ${player.stats[stat]}</span>
         <button class="addStat" id="add-${stat}" onclick="increase${stat}()">+</button>
     </div>
     `

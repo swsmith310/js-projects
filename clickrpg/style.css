@@ -1,0 +1,24 @@
+body {
+    background: black;
+    color: #ff00ff;
+    font-family: monospace;
+}
+
+#stat-box {
+    text-align: center;
+    padding: 1em;
+}
+
+.subStat {
+    border: 1px solid #ff0000;
+    border-radius: 12%;
+    background-color: black;
+    color: #ff0000;
+}
+
+.addStat {
+    border: 1px solid #00ff00;
+    border-radius: 12%;
+    background-color: black;
+    color: #00ff00;
+}
