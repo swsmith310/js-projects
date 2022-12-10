@@ -7,6 +7,8 @@ class Guard {
     }
 
     move(path) {
+        this.x += this.xv; 
+        this.y += this.yv; 
         path();
     }
 
@@ -42,8 +44,6 @@ function draw() {
             A.xv = 0;
             A.yv = 1;
         }
-        A.x += A.xv; 
-        A.y += A.yv; 
     });
     B.move(() => {
         if (B.x == 320 && B.y == 240) {
@@ -62,8 +62,6 @@ function draw() {
             B.xv = 0;
             B.yv = -1;
         }
-        B.x += B.xv; 
-        B.y += B.yv; 
     });
     A.draw();
     B.draw();
